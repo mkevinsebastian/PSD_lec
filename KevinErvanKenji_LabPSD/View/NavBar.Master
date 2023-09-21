@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavBar.master.cs" Inherits="KevinErvanKenji_LabPSD.NavBar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            margin: 0;
+}
+        .container{
+            position: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .home{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        .home:hover{
+            transform: scale(1.02);
+        }
+
+        .login{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .login:hover{
+            transform: scale(1.02);
+        }
+
+        .register{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .register:hover{
+            transform: scale(1.02);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <nav class="container" style="background-color: #DBAB00">
+                    <asp:Button ID="homeBtn" class="home" runat="server" Text="Home" onclick="homeBtn_Click" />
+                    <asp:Button ID="loginBtn" class="login" runat="server" Text="Login" OnClick="loginBtnClick" />
+                    <asp:Button ID="registerBtn" class="register" runat="server" Text="Register" OnClick="registerBtnClick" />
+                </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+</body>
+</html>

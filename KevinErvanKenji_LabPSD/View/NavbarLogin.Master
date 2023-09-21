@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavbarLogin.master.cs" Inherits="KevinErvanKenji_LabPSD.View.NavbarLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            position: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .homeABtn1{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        .homeABtn1:hover{
+            transform: scale(1.02);
+        }
+
+        .cartBtn1{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .cartBtn1:hover{
+            transform: scale(1.02);
+        }
+
+        .transactionBtn1{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .transactionBtn1:hover{
+            transform: scale(1.02);
+        }
+
+        .updateBtn1{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .updateBtn1:hover{
+            transform: scale(1.02);
+        }
+
+        .logOBtn1{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .logOBtn1:hover{
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <nav class="container" style="background-color: #DBAB00">
+                <asp:Button ID="homeABtn" class="homeABtn1" runat="server" Text="Home" OnClick="homeABtn_Click" />
+                <asp:Button ID="cartBtn" class="cartBtn1" runat="server" Text="Cart" OnClick="cartBtn_Click" />
+                <asp:Button ID="transactionBtn"  class="transactionBtn1" runat="server" Text="Transaction" />
+                <asp:Button ID="updateBtn" class="updateBtn1" runat="server" Text="Update Profile" OnClick="updateBtn_Click" />
+                <asp:Button ID="logOBtn"  class="logOBtn1" runat="server" Text="Log Out" OnClick="logOBtn_Click" />
+                </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavbarAdmin.master.cs" Inherits="KevinErvanKenji_LabPSD.View.NavbarAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            margin: 0;
+}
+        .container{
+            position: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .homea{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        .homea:hover{
+            transform: scale(1.02);
+        }
+
+        .transactiona{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .transactiona:hover{
+            transform: scale(1.02);
+        }
+
+        .updatea{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .updatea:hover{
+            transform: scale(1.02);
+        }
+        .updatea{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .updatea:hover{
+            transform: scale(1.02);
+        }
+
+        .logouta{
+            padding: 3px;
+            text-align: center;
+            background-color: #f4cb39;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .logouta:hover{
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <nav class="container" style="background-color: #DBAB00">
+                    <asp:Button ID="homeBtnA" class="homea" runat="server" Text="Home" OnClick="homeABtn_Click1A" />
+                    <asp:Button ID="transactionBtnA" class="transactiona" runat="server" Text="Transaction" OnClick="transactionBtnA_Click" />
+                    <asp:Button ID="updateBtnA" class="updatea" runat="server" Text="Update Profile" OnClick="updateABtn_Click1A" />
+                    <asp:Button ID="logoutBtnA" class="logouta" runat="server" Text="Log Out" OnClick="logoutABtn_Click1A" />
+                </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
